@@ -27,7 +27,8 @@ linux系统认为：自己的localtime != bios时间 (UTC策略)
 mac系统认为：自己的localtime != bios时间 (UTC策略)  
 windows系统认为：自己的localtime == bios时间 (无策略)  
 解决windows和linux时间不一致的方法有2种：  
-（1）设置Windows采用UTC策略 (推荐)
+（1）设置Windows采用UTC策略 (推荐)  
+（2）设置linux取消UTC策略 (不推荐)
 
 > ubuntu发行版本
 
@@ -43,6 +44,3 @@ windows系统认为：自己的localtime == bios时间 (无策略)
 > 更简单的定义：一个（GMT到localtime）的映射。  
 > 最简单的定义：不要去管它！抛弃一切把简单东西复杂化的狗屁概念。当然，我们承认UTC策略应该是第一优先选择，都怪windows系统不用它，要不然三大操作系统的时钟默认设置就都统一了。  
 
-（2）设置linux取消UTC策略 (不推荐)  
-
-> 略
