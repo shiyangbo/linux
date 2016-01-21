@@ -17,10 +17,12 @@ kernel (hd0,0)/vmlinuz boot=casper iso-scan/filename=/xxx.iso ro quiet splash lo
 initrd (hd0,0)/initrd.lz  
 
 // 注意事项  
-1.进grub先取消挂载：sudo umount –l /isodevice [详细参考](http://www.360doc.com/content/11/0506/22/6110614_114908124.shtml)  
-2.分区时看不到windows分区 [详细参考](http://forum.ubuntu.org.cn/viewtopic.php?f=77&t=190435 "很精彩")  
-即消除GPT分区表 [进一步参考](http://forum.ubuntu.org.cn/viewtopic.php?t=442575)  
-3.与window7构成双系统时，时钟不同步问题  
+1. 进grub先取消挂载：sudo umount –l /isodevice [详细参考](http://www.360doc.com/content/11/0506/22/6110614_114908124.shtml)  
+2.  分区时看不到windows分区 [详细参考](http://forum.ubuntu.org.cn/viewtopic.php?f=77&t=190435 "很精彩")  
+
+    即消除GPT分区表 [进一步参考](http://forum.ubuntu.org.cn/viewtopic.php?t=442575)  
+
+3. 与window7构成双系统时，时钟不同步问题  
 概念术语：一个本地计算机的时间 / bios时间 / CMOS时间 / 系统硬件时间 / 系统时钟 / systemclock / 硬件时钟 / 实时时钟RTC  
 概念术语：一个操作系统的时间 / 本地时间 / localtime / 系统时钟 / 软件时间  
 linux系统认为：自己的localtime != bios时间 (UTC策略)  
